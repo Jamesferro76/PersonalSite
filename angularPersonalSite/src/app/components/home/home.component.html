@@ -1,0 +1,194 @@
+<div class="background">
+<body>
+  <div class="header__wrapper">
+      <header style="background: url(https://wallpaperaccess.com/full/214901.jpg) no-repeat 50% 20% / cover"></header>
+
+      <div class="cols__container">
+        <div class="left__col">
+        <div class="img__container">
+          <img [src]="picture"/>
+          <span></span>
+        </div>
+        <h2>James Ferro</h2>
+        <p>{{age}}</p>
+        <p>{{address}}</p>
+
+        <div class="content">
+          <h4>Technologies:</h4>
+          <p>
+            Languages: Java<br/>
+            Web: Angular, JavaScript, TypeScript, HTML, CSS, Bootstrap<br/>
+            Database: SQL, JPA, JDBC, JPQL
+            APIs: REST, JSON<br/>
+            Methodologies: TDD <br/>
+            Frameworks: Spring Framework, Spring Boot, Agile, Scrum <br/>
+            Configuration Management: Git
+          </p>
+
+          <ul>
+            <a href="">
+              <img src="https://cdn-icons-png.flaticon.com/128/1377/1377213.png" alt="" width="40" height="40">
+            </a>
+            <a href="">
+              <img src="https://cdn-icons-png.flaticon.com/128/1051/1051275.png"width="40" height="40">
+            </a>
+            <a href="">
+              <img src="https://cdn-icons-png.flaticon.com/128/3670/3670166.png"width="40" height="40">
+            </a>
+            <a href="">
+              <img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png"width="40" height="40">
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right__col">
+        <nav>
+          <ul>
+            <li><a (click)="descriptionToggle()">Description</a></li>
+            <li><a (click)="projectsToggle()">Projects</a></li>
+            <li><a (click)="experienceToggle()">Experience</a></li>
+
+          </ul>
+
+        </nav>
+
+
+
+        <div *ngIf="descriptionBool" >
+          <div>
+
+            <h4>About:</h4>
+            <hr>
+            <p>My transition from music education to software development allows me to engage those aspects of both music and programming that require the ability to think outside the box in devising creative solutions. I am a recent graduate of an intensive Java Full Stack coding bootcamp now looking for a challenging software development position.</p>
+            <p>
+
+            </div>
+          </div>
+
+          <div *ngIf="projectsBool" class="photos">
+            <!-- Put in cards here -->
+<!-- Interstellar -->
+            <div
+     class ="box-item">
+      <div class ="flip-box">
+        <div class ="flip-box-front text-center" style="background-image:url({{image1}});">
+          <div class="inner-front color-white">
+            <h3 class ="flip-box-header">Interstellar</h3>
+            <p>Dating app:</p>
+          </div>
+        </div>
+        <div class="flip-box-back text-center" style="background-image:url({{backgroundImage}});">
+          <div class="inner-back color-white">
+            <div class ="flip-box-header-back"></div>
+
+            <a href="{{link11}}">
+              <span class="material-symbols-outlined">
+                language
+                </span>
+            </a>
+            <a href="{{link12}}">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"width="40" height="40">
+            </a>
+            <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- If this then that -->
+     <div class ="box-item">
+      <div class ="flip-box">
+        <div class ="flip-box-front text-center" style="background-image:url({{image1}});">
+          <div class="inner-front color-white">
+            <h3 class ="flip-box-header">If This Then That</h3>
+            <p>Behavior reward:</p>
+          </div>
+        </div>
+        <div class="flip-box-back text-center" style="background-image:url({{backgroundImage}});">
+          <div class="inner-back color-white">
+            <div class ="flip-box-header-back"></div>
+
+            <a href="{{link21}}">
+              <span class="material-symbols-outlined">
+                language
+                </span>
+            </a>
+            <a href="{{link22}}">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"width="40" height="40">
+            </a>
+            <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Inside Scoop -->
+     <div class ="box-item">
+      <div class ="flip-box">
+        <div class ="flip-box-front text-center" style="background-image:url({{image1}});">
+          <div class="inner-front color-white">
+            <h3 class ="flip-box-header">If This Then That</h3>
+            <p>Behavior reward:</p>
+          </div>
+        </div>
+        <div class="flip-box-back text-center" style="background-image:url({{backgroundImage}});">
+          <div class="inner-back color-white">
+            <div class ="flip-box-header-back"></div>
+
+            <a href="{{link31}}">
+              <span class="material-symbols-outlined">
+                language
+                </span>
+            </a>
+            <a href="{{link32}}">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"width="40" height="40">
+            </a>
+            <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Film Query -->
+     <div class ="box-item">
+      <div class ="flip-box">
+        <div class ="flip-box-front text-center" style="background-image:url({{image1}});">
+          <div class="inner-front color-white">
+            <h3 class ="flip-box-header">If This Then That</h3>
+            <p>Behavior reward:</p>
+          </div>
+        </div>
+        <div class="flip-box-back text-center" style="background-image:url({{backgroundImage}});">
+          <div class="inner-back color-white">
+            <div class ="flip-box-header-back"></div>
+
+            <a href="{{link41}}">
+              <span class="material-symbols-outlined">
+                language
+                </span>
+            </a>
+            <a href="{{link42}}">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"width="40" height="40">
+            </a>
+            <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+      </div>
+      </div>
+</div>
+</div>
+</body>
+
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
