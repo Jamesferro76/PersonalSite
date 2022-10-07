@@ -31,7 +31,7 @@ body{
   background-size: cover;
   background-position:center ;
   border-radius: 8px;
-  min-height: 475px;
+  min-height: 275px;
   transition: transform 0.7s cubic-bezier(.4, .2, .2, 1);
   backface-visibility: hidden;
 }
@@ -308,12 +308,12 @@ h2{
   text-align: center;
   font: copperplate;
   font-style: italic;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }
 h4{
   font: copperplate;
   font-style: italic;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }
 
 
@@ -429,7 +429,7 @@ a {
 .header__wrapper header {
   width: 100%;
   /* background-repeat: no-repeat 50% 20% / cover !important; */
-  min-height: calc(100px + 15vw);
+  min-height: calc(100px + 2vw);
 }
 
 .header__wrapper .cols__container .left__col {
