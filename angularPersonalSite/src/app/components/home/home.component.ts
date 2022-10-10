@@ -8,12 +8,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  age: string="28 years old";
+  email: string="jamesferromusic@gmail.com"
   address: string="East Islip, Ny";
   picture: string="https://i.postimg.cc/15j0wWm1/PXL-20220918-203457507.jpg";
   // "https://marketplace.canva.com/Foblk/MAEItxFoblk/1/tl/canva-happy-man-icon-MAEItxFoblk.png";
 
-  projectsBool: boolean=false;
+  projectsBool: boolean=true;
   descriptionBool: boolean=true;
   experienceBool: boolean=false;
 

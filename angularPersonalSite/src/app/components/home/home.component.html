@@ -9,8 +9,11 @@
           <img [src]="picture"/>
           <span></span>
         </div>
+        <br/>
+        <br/>
+        <br/>
         <h2>James Ferro</h2>
-        <p>{{age}}</p>
+        <p>{{email}}</p>
         <p>{{address}}</p>
 
         <div class="content">
@@ -43,7 +46,7 @@
       </div>
 
       <div class="right__col">
-        <nav>
+        <!-- <nav>
           <ul>
             <li><a (click)="descriptionToggle()">Description</a></li>
             <li><a (click)="projectsToggle()">Projects</a></li>
@@ -51,22 +54,23 @@
 
           </ul>
 
-        </nav>
+        </nav> -->
 
 
 
-        <div *ngIf="descriptionBool" >
           <div>
 
-            <h4>About:</h4>
+            <br/>
+            <h4>About Me:</h4>
             <hr>
             <p>My transition from music education to software development allows me to engage those aspects of both music and programming that require the ability to think outside the box in devising creative solutions. I am a recent graduate of an intensive Java Full Stack coding bootcamp now looking for a challenging software development position.</p>
-            <p>
+            <br/>
+            <h4>Check out some of my projects:</h4>
+            <hr>
 
             </div>
-          </div>
 
-          <div *ngIf="projectsBool" class="photos">
+          <div class="photos">
             <!-- Put in cards here -->
 <!-- Interstellar -->
             <div

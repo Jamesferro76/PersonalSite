@@ -1,7 +1,8 @@
 /* Flip card CSS  */
 body{
   font-family: 'Mntserrat', Sans-serif;
-  background: white !important;
+  background:  rgba(255, 255, 255, 0.75) !important;
+
 
 }
 
@@ -24,7 +25,7 @@ body{
   transform-style: preserve-3d;
   perspective: 1000px;
   cursor: pointer;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .flip-box-front,
 .flip-box-back{
@@ -399,7 +400,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -447,8 +448,8 @@ a {
   transform: translatex(-50%);
 }
 .header__wrapper .cols__container .left__col .img__container img {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   display: block;
@@ -598,6 +599,7 @@ a {
     overflow: auto;
     padding: 0 0 30px;
   }
+
   .header__wrapper .cols__container .right__col .mixers {
     height: 365px;
     overflow: auto;
